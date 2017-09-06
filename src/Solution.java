@@ -6,6 +6,7 @@ import java.util.Arrays;
 /**
  * Created by a.zinov on 05.09.2017.
  * некоторые задачи тут: https://habrahabr.ru/post/312278/
+ * решение задач Школа программистов hh.ru 2017
  */
 public class Solution {
 
