@@ -33,10 +33,8 @@ public class Solution {
     public static void leastPositiveInteger() {
 
         int a = 2, b = 5, founded = 0;
-        //double xFirstMax = Math.floor(9/Math.max(a, b));
         String xSorted = "";
         for (Integer x = 1; x <= 100000000; x++) {
-            //if (x.toString().toCharArray()[0] > (int)xFirstMax) continue;
             xSorted = strValue(x);
             if (xSorted.equals(strValue(a*x)) && xSorted.equals(strValue(b*x))){
                 founded = x;
@@ -58,9 +56,6 @@ public class Solution {
     }
 
     public static boolean remarkableNumber(Integer p) {
-
-//        if (p == 3523014){
-//            printInt(3523014);
 
             String[] ints = p.toString().split("");
             ArrayList<Integer> arrayList = new ArrayList<>();
@@ -118,7 +113,6 @@ public class Solution {
                     return true;
                 }
             }
-        //}
 
         return false;
     }
@@ -213,12 +207,6 @@ public class Solution {
 
 
         }
-//
-//        for (int k = 0; k < N; k++) {
-//            for (int v = 0; v < N; v++)
-//                System.out.print(m[k][v] + "\t");
-//            System.out.println();
-//        }
 
         int sumMainD = 0;
         for (int i1 = 0; i1 < N; i1++) {
@@ -228,13 +216,12 @@ public class Solution {
                 }
             }
         }
-        //printInt(sumMainD);
 
         int sumSideD = 0;
         for (int i1 = 0; i1 < N; i1++) {
             sumSideD += m[i1][N - i1 - 1];
         }
-        //printInt(sumSideD);
+
         printInt(sumMainD + sumSideD);
 
     }
@@ -254,9 +241,6 @@ public class Solution {
                                         if (q != t && q != w && q != z && q != r) {
                                             if ((1000*r + 100*z + 10*w + r) + (1000*r + 100*w + 10*t + z) == (1000*t + 100*w + 10*q + q)) {
                                                 count++;
-//                                                printInt(1000*r + 100*z + 10*w + r);
-//                                                printInt(1000*r + 100*w + 10*t + z);
-//                                                printInt(1000*t + 100*w + 10*q + q);
                                             }
                                         }
                                     }
