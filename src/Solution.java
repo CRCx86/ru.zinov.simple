@@ -11,10 +11,10 @@ public class Solution {
 
     public static void main(String[] args) {
 
-//        rebus();
-//        matrixSnakeDiagonal(1013);
-//        withoutPolyndromeCounter(13924);
-//        remarkableNumberCheck(2700000);
+        rebus();
+        matrixSnakeDiagonal(1013);
+        withoutPolyndromeCounter(13924);
+        remarkableNumberCheck(2700000);
         leastPositiveInteger();
 
 
